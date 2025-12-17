@@ -1,0 +1,11 @@
+.sayContainer {
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sayContent {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}

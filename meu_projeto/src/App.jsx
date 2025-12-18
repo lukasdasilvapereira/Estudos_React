@@ -1,6 +1,7 @@
 import HelloWorld from './components/HelloWorld.jsx'
 import SayMyName from './components/SayMyName.jsx'
 import Pessoa from './components/Pessoa.jsx'
+import List from './components/List.jsx'
 
 function App() {
   const name = "Lucas Pereira"
@@ -16,6 +17,7 @@ function App() {
       <HelloWorld />
       <SayMyName nome={name}/>
       <Pessoa nome="Lucas" idade="19" profissao="Programador"/>
+      <List />
     </div>
   )
 }

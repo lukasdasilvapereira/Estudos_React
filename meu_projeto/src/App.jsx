@@ -1,11 +1,9 @@
-import Event from "./components/Event"
-import Form from "./components/Form"
+import Condicionais from "./components/Condicionais"
 
 function App() {
   return (
     <div>
-      <Event numero={1}/>
-      <Form />
+      <Condicionais />
     </div>
   )
 }

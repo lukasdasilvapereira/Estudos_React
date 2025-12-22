@@ -1,9 +1,15 @@
-import Condicionais from "./components/Condicionais"
+import { useState } from "react"
+import Saudacao from "./Saudacao"
+import SayYourName from "./SayYourName"
+
 
 function App() {
+  const [name, setName] = useState()
   return (
     <div>
-      <Condicionais />
+     <h1>State Lift</h1>
+     <SayYourName setName={setName}/>
+     <Saudacao nome={name}/>
     </div>
   )
 }

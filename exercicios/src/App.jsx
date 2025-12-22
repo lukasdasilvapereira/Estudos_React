@@ -1,16 +1,11 @@
-import Form from './components/Form'
-import Frase from './components/Frase'
-import './components/Marcas'
-import Marcas from './components/Marcas'
+import OutraLista from "./OutraLista"
 
-
-function App(){
-  return(
-    <>
-    <Frase />
-    <Marcas marca="Ferrari" dinheiro={1.00000000000}/>
-    <Form />
-    </>
+function App() {
+  const lista = ["React", "Vue", "Angular"]
+  return (
+    <div>
+      <OutraLista itens={lista} />
+    </div>
   )
 }
 

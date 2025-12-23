@@ -1,0 +1,11 @@
+.nav_link {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    text-decoration: none;
+    color: red;
+    font-weight: 500;
+    font-size: 2em;
+    cursor: pointer;
+}

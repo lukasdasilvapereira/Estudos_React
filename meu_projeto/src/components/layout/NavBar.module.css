@@ -1,0 +1,8 @@
+.link {
+    display: flex;
+    list-style: none;
+}
+
+.linkItem {
+    margin-right: 20px;
+}

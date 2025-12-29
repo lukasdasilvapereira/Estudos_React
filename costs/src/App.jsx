@@ -7,24 +7,25 @@ import NewProject from './components/pages/NewProject'
 import NavBar from './components/pages/layout/NavBar'
 import Container from './components/pages/layout/Container'
 import Projects from './components/Projects'
+import Footer from './components/pages/layout/Footer'
 
 function App() {
 
   return (
     <Router>
-      <div>
+      <div className='app'>
         <NavBar />
-      </div>
       <Container customClass="min-height">
         <Routes>
           <Route path='/' element={<Home />} />
-           <Route path='/projects' element={<Projects />} />
+          <Route path='/projects' element={<Projects />} />
           <Route path='/company' element={<Company />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/newproject' element={<NewProject />} />
         </Routes>
       </Container>
-
+      <Footer />
+      </div>
     </Router >
   )
 }

@@ -1,5 +1,7 @@
+import Input from '../form/Input'
+import Select from '../form/Select'
+import SubmitButton from '../form/SubmitButton'
 import styles from './NewProject.module.css'
-import LinkButton from './layout/LinkButton'
 
 function NewProject() {
     return (
@@ -8,27 +10,12 @@ function NewProject() {
             <p>Crie seu projeto para depois adicionar os serviços</p>
 
             <form>
-                <div>
-                    <label htmlFor="nome">Nome do projeto:</label>
-                    <input type="text" placeholder="Insira o nome do projeto" name="nome" id="nome" />
-                </div>
+                <Input type='text' text="Nome do projeto:" name='name' id='name' placeholder="Insira o nome do projeto" />
 
-                <div>
-                    <label htmlFor="orcamento">Orçamento do projeto:</label>
-                    <input type="number" placeholder="Insira o orçamento total" name="orcamento" id="orcamento" />
-                </div>
+                <Input type='number' text="Orçamento do projeto:" name='orcamento' id="orcamento" placeholder="Insira o orçamento do projeto" />
 
-                <div>
-                    <label htmlFor="categoria">Selecione a categoria:</label>
-                    <select name="categoria" id="categoria">
-                        <option value="Selecione uma opção">Selecione uma opção</option>
-                        <option value="infra">Infra</option>
-                        <option value="desenvolvimento">Desenvolvimento</option>
-                        <option value="Design">Design</option>
-                        <option value="planejamento">Planejamento</option>
-                    </select>
-                </div>
-                <button type="submit">Criar Projeto</button>
+                <Select name="category_id" text="Selecione a Categoria:" />
+               <SubmitButton text="Criar Projeto"/>
             </form>
         </div>
     )
